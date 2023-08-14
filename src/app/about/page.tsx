@@ -4,7 +4,7 @@ import { FunctionComponent } from "react";
 const AboutPage: FunctionComponent = () => {
   return (
     <div className="flex flex-col items-center justify-center p-8 bg-gray-50">
-      <h1 className="text-2xl font-bold text-center mt-2 mb-4">Mari2t</h1>
+      <h1 className="text-2xl font-bold text-center mt-2 mb-4">mari2t</h1>
       <img src="/img/plofilePic.jpg" alt="portrait" className="w-36 h-36" />
       <div className="w-1/4 mt-2 px-4 py-4 bg-white rounded-lg border-4">
         <p className="text-md">web関係の技術を勉強中です。</p>
