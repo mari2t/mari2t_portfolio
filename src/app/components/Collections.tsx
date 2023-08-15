@@ -5,7 +5,7 @@ const Collections = () => {
   const products = [
     {
       title: "TODO everywhere",
-      overview: "TODOApp",
+      overview: "TODO App",
       useTech: "Next,Tailwind CSS,OpenWether,Maps Embed API",
       creationday: "2023/7/9",
       imgUrl: "/img/imgtodoeverywehere.png",
@@ -13,7 +13,7 @@ const Collections = () => {
     },
     {
       title: "YouWearItWell",
-      overview: "WeatherApp",
+      overview: "Weather App",
       useTech: "Next,CSS Modules,OpenWetherAPI",
       creationday: "2023/5/31",
       imgUrl: "/img/imgyouwear.png",
@@ -115,7 +115,7 @@ const Product = ({
             {overview}
           </p>
           <p className="text-gray-600">{useTech}</p>
-          <p className="text-gray-400">{creationday}</p>
+          <p className="text-gray-400">Creation Date : {creationday}</p>
         </a>
       </div>
     </div>
