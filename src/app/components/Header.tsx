@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 
 const Header: FunctionComponent = () => {
   return (
-    <header className="flex justify-between p-5 bg-lime-400">
+    <header className="flex justify-between p-4 bg-lime-400">
       <div>
         <Link href="/" className="text-stone-600 font-bold text-3xl">
           mari2t Portfolio Site
