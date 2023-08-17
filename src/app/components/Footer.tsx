@@ -19,7 +19,6 @@ const Footer = () => {
               </Link>
             </div>
           </nav>
-          <div className="flex gap-4">{/* ソーシャルメディアのリンク */}</div>
         </div>
 
         <div className="py-2 text-center text-sm text-gray-400">
