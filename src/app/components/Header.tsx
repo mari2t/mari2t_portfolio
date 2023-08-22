@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FunctionComponent } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const Header: FunctionComponent = () => {
   return (
@@ -18,6 +19,12 @@ const Header: FunctionComponent = () => {
         </Link>
         <Link href="/about" className="text-stone-600 font-bold text-xl">
           About
+        </Link>
+        <Link
+          href="https://github.com/mari2t"
+          className="text-stone-600 font-bold text-xl"
+        >
+          <FaGithub />
         </Link>
       </div>
     </header>
