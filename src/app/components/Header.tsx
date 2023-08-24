@@ -10,7 +10,7 @@ const Header: FunctionComponent = () => {
           mari2t Portfolio Site
         </Link>
       </div>
-      <div className="flex space-x-4">
+      <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
         <Link href="/" className="text-stone-600 font-bold text-xl">
           Portfolios
         </Link>
