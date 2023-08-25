@@ -102,14 +102,15 @@ const Product = ({
         href={githubUrl}
         className="group mb-2 block h-48 w-full overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3 relative"
       >
-        <div className="relative h-full w-full">
-          <img
+        <div className="relative h-[400px] w-full">
+          <Image
             src={imageUrl}
             alt={`Photo of ${overview}`}
-            className="absolute top-0 left-0 w-full h-full object-cover object-center transition duration-200 group-hover:scale-110"
+            width={1600}
+            height={600}
+            className="transition duration-200 group-hover:scale-110"
           />
         </div>
-        y
       </a>
       <div className="flex flex-col">
         <a href={githubUrl}>
