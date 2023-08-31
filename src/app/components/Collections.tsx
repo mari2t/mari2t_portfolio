@@ -1,4 +1,12 @@
 import Image from "next/image";
+import { IconContext } from "react-icons";
+import {
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoVuejs,
+  BiLogoJavascript,
+} from "react-icons/bi";
+import { TbBrandNextjs, TbApi } from "react-icons/tb";
 
 const Collections = () => {
   // 各レポジトリの情報
@@ -6,7 +14,7 @@ const Collections = () => {
     {
       title: "TODO everywhere",
       overview: "TODO App",
-      useTech: "Next,Tailwind CSS,OpenWether,Maps Embed API",
+      useTech: "Next,Tailwind CSS,API",
       creationday: "2023/7/9",
       imgUrl: "/img/imgtodoeverywehere.png",
       githubUrl: "https://github.com/mari2t/todo-everywhere",
@@ -14,7 +22,7 @@ const Collections = () => {
     {
       title: "YouWearItWell",
       overview: "Weather App",
-      useTech: "Next,CSS Modules,OpenWetherAPI",
+      useTech: "Next,API",
       creationday: "2023/5/31",
       imgUrl: "/img/imgyouwear.png",
       githubUrl: "https://github.com/mari2t/YouWearItWell",
@@ -30,7 +38,7 @@ const Collections = () => {
     {
       title: "Cover-non-DXenvironment-Girl",
       overview: "Meeting Recording App",
-      useTech: "-",
+      useTech: "JavaScript",
       creationday: "2023/3/11",
       imgUrl: "/img/imgcover.png",
       githubUrl: "https://github.com/mari2t/Cover-non-DXenvironment-Girl",
@@ -88,6 +96,26 @@ type ProductProps = {
   githubUrl: string;
 };
 
+type TechIconProps = {
+  techName: string;
+};
+
+// TechIconコンポーネント
+const TechIcon = ({ techName }: TechIconProps) => {
+  return (
+    <div className="inline-block mr-2 ">
+      {/* <IconContext.Provider value={{ color: "rgb(12 74 110)", size: "2em" }}> */}
+      {techName === "React" && <BiLogoReact />}
+      {techName === "Tailwind CSS" && <BiLogoTailwindCss />}
+      {techName === "Next" && <TbBrandNextjs />}
+      {techName === "Vue" && <BiLogoVuejs />}
+      {techName === "API" && <TbApi />}
+      {techName === "JavaScript" && <BiLogoJavascript />}
+      {/* </IconContext.Provider> */}
+    </div>
+  );
+};
+
 const Product = ({
   title,
   overview,
@@ -96,6 +124,8 @@ const Product = ({
   imageUrl,
   githubUrl,
 }: ProductProps) => {
+  // useTechを配列に変換
+  const techArray = useTech.split(",");
   return (
     <div>
       <a
@@ -117,7 +147,11 @@ const Product = ({
           <p className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">
             {overview}
           </p>
-          <p className="text-gray-600">{useTech}</p>
+          <div className="flex">
+            {techArray.map((tech, index) => (
+              <TechIcon key={index} techName={tech.trim()} />
+            ))}
+          </div>
           <p className="text-gray-400">Creation Date : {creationday}</p>
         </a>
       </div>
