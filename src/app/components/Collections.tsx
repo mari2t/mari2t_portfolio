@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { IconContext } from "react-icons";
 import {
@@ -100,22 +101,6 @@ type TechIconProps = {
   techName: string;
 };
 
-// TechIconコンポーネント
-const TechIcon = ({ techName }: TechIconProps) => {
-  return (
-    <div className="inline-block mr-2 ">
-      {/* <IconContext.Provider value={{ color: "rgb(12 74 110)", size: "2em" }}> */}
-      {techName === "React" && <BiLogoReact />}
-      {techName === "Tailwind CSS" && <BiLogoTailwindCss />}
-      {techName === "Next" && <TbBrandNextjs />}
-      {techName === "Vue" && <BiLogoVuejs />}
-      {techName === "API" && <TbApi />}
-      {techName === "JavaScript" && <BiLogoJavascript />}
-      {/* </IconContext.Provider> */}
-    </div>
-  );
-};
-
 const Product = ({
   title,
   overview,
@@ -155,6 +140,22 @@ const Product = ({
           <p className="text-gray-400">Creation Date : {creationday}</p>
         </a>
       </div>
+    </div>
+  );
+};
+
+// TechIconコンポーネント
+const TechIcon = ({ techName }: TechIconProps) => {
+  return (
+    <div className="inline-block mr-2 ">
+      <IconContext.Provider value={{ color: "rgb(12 74 110)", size: "1.6em" }}>
+        {techName === "React" && <BiLogoReact />}
+        {techName === "Tailwind CSS" && <BiLogoTailwindCss />}
+        {techName === "Next" && <TbBrandNextjs />}
+        {techName === "Vue" && <BiLogoVuejs />}
+        {techName === "API" && <TbApi />}
+        {techName === "JavaScript" && <BiLogoJavascript />}
+      </IconContext.Provider>
     </div>
   );
 };
