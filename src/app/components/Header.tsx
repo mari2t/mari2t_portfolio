@@ -20,12 +20,6 @@ const Header: FunctionComponent = () => {
         <Link href="/about" className="text-stone-600 font-bold text-xl">
           About
         </Link>
-        <Link
-          href="https://github.com/mari2t"
-          className="text-stone-600 font-bold text-xl"
-        >
-          <FaGithub />
-        </Link>
       </div>
     </header>
   );
