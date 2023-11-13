@@ -7,11 +7,19 @@ import {
   BiLogoVuejs,
   BiLogoJavascript,
 } from "react-icons/bi";
-import { TbBrandNextjs, TbApi } from "react-icons/tb";
+import { TbBrandNextjs, TbApi, TbBrandSvelte } from "react-icons/tb";
 
 const Collections = () => {
   // 各レポジトリの情報
   const products = [
+    {
+      title: "action-impact-comparison",
+      overview: "Comparison App",
+      useTech: "Svelte,Tailwind CSS",
+      creationday: "2023/11/11",
+      imgUrl: "/img/imgActionImpactComparison.png",
+      githubUrl: "https://github.com/mari2t/action-impact-comparison",
+    },
     {
       title: "TODO everywhere",
       overview: "TODO App",
@@ -155,6 +163,7 @@ const TechIcon = ({ techName }: TechIconProps) => {
         {techName === "Vue" && <BiLogoVuejs />}
         {techName === "API" && <TbApi />}
         {techName === "JavaScript" && <BiLogoJavascript />}
+        {techName === "Svelte" && <TbBrandSvelte />}
       </IconContext.Provider>
     </div>
   );
