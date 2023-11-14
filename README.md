@@ -9,6 +9,7 @@ This is a portfolio site of my productions.
 
 - Next.js
 - Tailwind CSS
+- daisyUI
 
 ## Creation Date
 
