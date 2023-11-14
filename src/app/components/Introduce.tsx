@@ -7,9 +7,7 @@ const Introduce = () => {
         <img
           src="./img/plofilePic.jpg"
           alt="プロフィール画像"
-          width="10%"
-          height="auto"
-          className="rounded-full border-4 mr-4"
+          className="h-24 w-24 rounded-full border-4 mr-4"
         />
         <div className="chat chat-start w-2/5 flex items-end mb-4">
           <div className="chat-bubble">
