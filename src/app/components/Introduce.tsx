@@ -13,7 +13,7 @@ const Introduce = () => {
           <div className="chat-bubble text-sm lg:text-base ">
             こんにちは、mari2tです。 <br />
             web関係を勉強中です。現在は東京在住の技術職です。 <br />
-            ここには作ったものやスキル等を載せています。
+            ここには作ったものや自己紹介等を載せています。
           </div>
         </div>
       </div>
