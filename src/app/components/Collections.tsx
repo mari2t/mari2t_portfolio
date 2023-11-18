@@ -22,6 +22,14 @@ const Collections = () => {
       githubUrl: "https://github.com/mari2t/action-impact-comparison",
     },
     {
+      title: "mari2t_portfolio",
+      overview: "portfolio site",
+      useTech: "Next,Tailwind CSS",
+      creationday: "2023/8/14",
+      imgUrl: "/img/imgportfoliosite.png",
+      githubUrl: "https://github.com/mari2t/mari2t_portfolio",
+    },
+    {
       title: "TODO everywhere",
       overview: "TODO App",
       useTech: "Next,Tailwind CSS,API",
