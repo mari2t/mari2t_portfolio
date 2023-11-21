@@ -77,10 +77,15 @@ const SkillsPage: FunctionComponent = () => {
             >
               <h3 className="mb-2 text-lg font-semibold md:text-xl flex items-center">
                 <span className="ml-2">
-                  {section.title}{" "}
+                  {section.title}
                   <div className="flex">
-                    {section.skills.map((skill) => (
-                      <IconContext.Provider value={{ color: "rgb(12 74 110)" }}>
+                    {section.skills.map((skill, skillIndex) => (
+                      <IconContext.Provider
+                        value={{ color: "rgb(12 74 110)" }}
+                        key={skillIndex}
+                      >
+                        {" "}
+                        {/* keyを追加 */}
                         <span>{skill.icon}</span>
                       </IconContext.Provider>
                     ))}
@@ -91,7 +96,9 @@ const SkillsPage: FunctionComponent = () => {
               <ul style={{ paddingLeft: "30px", listStyleType: "circle" }}>
                 {section.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex items-center">
-                    <span className="ml-2">{skill.name}</span>{" "}
+                    {" "}
+                    {/* keyはここでも既に使用されている */}
+                    <span className="ml-2">{skill.name}</span>
                   </li>
                 ))}
               </ul>
