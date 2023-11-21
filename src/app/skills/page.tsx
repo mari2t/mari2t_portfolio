@@ -79,9 +79,7 @@ const SkillsPage: FunctionComponent = () => {
               <ul style={{ paddingLeft: "30px", listStyleType: "circle" }}>
                 {section.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex items-center">
-                    {skill.icon} {/* アイコンを表示 */}
                     <span className="ml-2">{skill.name}</span>{" "}
-                    {/* スキル名を表示 */}
                   </li>
                 ))}
               </ul>

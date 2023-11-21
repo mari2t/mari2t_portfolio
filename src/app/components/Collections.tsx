@@ -127,7 +127,6 @@ const Product = ({
   imageUrl,
   githubUrl,
 }: ProductProps) => {
-  // useTechを配列に変換
   const techArray = useTech.split(",");
   return (
     <div>
