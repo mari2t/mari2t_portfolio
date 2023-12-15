@@ -76,21 +76,7 @@ const SkillsPage: FunctionComponent = () => {
               key={index}
             >
               <h3 className="mb-2 text-lg font-semibold md:text-xl flex items-center">
-                <span className="ml-2">
-                  {section.title}
-                  <div className="flex">
-                    {section.skills.map((skill, skillIndex) => (
-                      <IconContext.Provider
-                        value={{ color: "rgb(12 74 110)" }}
-                        key={skillIndex}
-                      >
-                        {" "}
-                        {/* keyを追加 */}
-                        <span>{skill.icon}</span>
-                      </IconContext.Provider>
-                    ))}
-                  </div>
-                </span>
+                <span className="ml-2">{section.title}</span>
               </h3>
 
               <ul style={{ paddingLeft: "30px", listStyleType: "circle" }}>
