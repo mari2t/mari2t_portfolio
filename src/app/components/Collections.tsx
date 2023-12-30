@@ -3,6 +3,7 @@ import Image from "next/image";
 import Introduce from "./Introduce";
 import { IconContext } from "react-icons";
 import {
+  BiLogoTypescript,
   BiLogoReact,
   BiLogoTailwindCss,
   BiLogoVuejs,
@@ -14,8 +15,16 @@ const Collections = () => {
   // 各レポジトリの情報
   const products = [
     {
+      title: "subscription-management",
+      overview: "💰 サブスクリプション管理アプリ",
+      useTech: "Typescript,Next,Tailwind CSS",
+      creationday: "2023/12/28",
+      imgUrl: "/img/imgSubscription-management.png",
+      githubUrl: "https://github.com/mari2t/subscription-management",
+    },
+    {
       title: "action-impact-comparison",
-      overview: "Comparison App",
+      overview: "🚶 行動比較アプリ",
       useTech: "Svelte,Tailwind CSS",
       creationday: "2023/11/11",
       imgUrl: "/img/imgActionImpactComparison.png",
@@ -23,23 +32,23 @@ const Collections = () => {
     },
     {
       title: "mari2t_portfolio",
-      overview: "portfolio site",
-      useTech: "Next,Tailwind CSS",
+      overview: "📖 ポートフォリオサイト",
+      useTech: "Typescript,Next,Tailwind CSS",
       creationday: "2023/8/14",
       imgUrl: "/img/imgportfoliosite.png",
       githubUrl: "https://github.com/mari2t/mari2t_portfolio",
     },
     {
       title: "TODO everywhere",
-      overview: "TODO App",
-      useTech: "Next,Tailwind CSS,API",
+      overview: "	✔️TODO アプリ",
+      useTech: "Typescript,Next,Tailwind CSS,API",
       creationday: "2023/7/9",
       imgUrl: "/img/imgtodoeverywehere.png",
       githubUrl: "https://github.com/mari2t/todo-everywhere",
     },
     {
       title: "YouWearItWell",
-      overview: "Weather App",
+      overview: "🌞 お天気アプリ",
       useTech: "Next,API",
       creationday: "2023/5/31",
       imgUrl: "/img/imgyouwear.png",
@@ -47,7 +56,7 @@ const Collections = () => {
     },
     {
       title: "TheRestOfYourLife",
-      overview: "Life Time Calculator App",
+      overview: "🧓 人生の残り時間計算アプリ",
       useTech: "Vue",
       creationday: "2023/5/4",
       imgUrl: "/img/imgtherest.png",
@@ -55,7 +64,7 @@ const Collections = () => {
     },
     {
       title: "Cover-non-DXenvironment-Girl",
-      overview: "Meeting Recording App",
+      overview: "🗣️ 打ち合わせ記録アプリ",
       useTech: "JavaScript",
       creationday: "2023/3/11",
       imgUrl: "/img/imgcover.png",
@@ -63,7 +72,7 @@ const Collections = () => {
     },
     {
       title: "MySchedule",
-      overview: "Scheduling App",
+      overview: "📅 スケジューリングアプリ",
       useTech: "React,Tailwind CSS",
       creationday: "2023/1/29",
       imgUrl: "/img/imgmyschedule.png",
@@ -71,7 +80,7 @@ const Collections = () => {
     },
     {
       title: "MydidReact_fourSeasons",
-      overview: "App to record what you've done",
+      overview: "✅ やったこと記録アプリ",
       useTech: "React",
       creationday: "2023/1/3",
       imgUrl: "/img/imgmydid.png",
@@ -146,7 +155,7 @@ const Product = ({
       </a>
       <div className="flex flex-col">
         <a href={githubUrl}>
-          <p className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">
+          <p className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500">
             {overview}
           </p>
           <div className="flex">
@@ -166,6 +175,7 @@ const TechIcon = ({ techName }: TechIconProps) => {
   return (
     <div className="inline-block mr-2 ">
       <IconContext.Provider value={{ color: "rgb(12 74 110)", size: "1.6em" }}>
+        {techName === "Typescript" && <BiLogoTypescript />}
         {techName === "React" && <BiLogoReact />}
         {techName === "Tailwind CSS" && <BiLogoTailwindCss />}
         {techName === "Next" && <TbBrandNextjs />}
