@@ -9,7 +9,14 @@ import {
   SiExpress,
   SiMysql,
   SiPostgresql,
+  SiAmazonec2,
+  SiAwslambda,
+  SiAmazons3,
+  SiAmazonrds,
+  SiAmazonaws,
   SiGooglecloud,
+  SiRubyonrails,
+  SiRuby,
 } from "react-icons/si";
 
 const skills = [
@@ -18,6 +25,7 @@ const skills = [
     skills: [
       { name: "JavaScript", icon: <SiJavascript /> },
       { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "Ruby", icon: <SiRuby /> },
       { name: "Python", icon: <FaPython /> },
     ],
   },
@@ -28,6 +36,7 @@ const skills = [
       { name: "Vue.js", icon: <FaVuejs /> },
       { name: "Express", icon: <SiExpress /> },
       { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "RubyOnRails", icon: <SiRubyonrails /> },
     ],
   },
   {
@@ -44,11 +53,11 @@ const skills = [
   {
     title: "AWS",
     skills: [
-      { name: "EC2", icon: <FaAws /> },
-      { name: "Lambda", icon: <FaAws /> },
-      { name: "S3", icon: <FaAws /> },
-      { name: "RDS", icon: <FaAws /> },
-      { name: "App Runner", icon: <FaAws /> },
+      { name: "EC2", icon: <SiAmazonec2 /> },
+      { name: "Lambda", icon: <SiAwslambda /> },
+      { name: "S3", icon: <SiAmazons3 /> },
+      { name: "RDS", icon: <SiAmazonrds /> },
+      { name: "App Runner", icon: <SiAmazonaws /> },
     ],
   },
   {
@@ -82,8 +91,7 @@ const SkillsPage: FunctionComponent = () => {
               <ul style={{ paddingLeft: "30px", listStyleType: "circle" }}>
                 {section.skills.map((skill, skillIndex) => (
                   <li key={skillIndex} className="flex items-center">
-                    {" "}
-                    {/* keyはここでも既に使用されている */}
+                    <span className="ml-2">{skill.icon}</span>
                     <span className="ml-2">{skill.name}</span>
                   </li>
                 ))}
