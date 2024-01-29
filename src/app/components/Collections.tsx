@@ -10,10 +10,19 @@ import {
   BiLogoJavascript,
 } from "react-icons/bi";
 import { TbBrandNextjs, TbApi, TbBrandSvelte } from "react-icons/tb";
+import { SiRubyonrails } from "react-icons/si";
 
 const Collections = () => {
   // 各レポジトリの情報
   const products = [
+    {
+      title: "ruby-kids-todo",
+      overview: "🧒 子供用TODOアプリ",
+      useTech: "RubyOnRails",
+      creationday: "2024/1/27",
+      imgUrl: "/img/imgRuby-kids-todo.png",
+      githubUrl: "https://github.com/mari2t/ruby-kids-todo",
+    },
     {
       title: "subscription-management",
       overview: "💰 サブスクリプション管理アプリ",
@@ -183,6 +192,7 @@ const TechIcon = ({ techName }: TechIconProps) => {
         {techName === "API" && <TbApi />}
         {techName === "JavaScript" && <BiLogoJavascript />}
         {techName === "Svelte" && <TbBrandSvelte />}
+        {techName === "RubyOnRails" && <SiRubyonrails />}
       </IconContext.Provider>
     </div>
   );
