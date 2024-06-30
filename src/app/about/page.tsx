@@ -11,20 +11,21 @@ const profiles = [
     profileItems: [
       "東京在住の会社員です。",
       "web関係の技術を勉強中です。",
-      "AWS Certified Cloud Practitioner取得を目指しています。",
+      "キャリアを模索中です。",
     ],
   },
   {
     title: "仕事",
     profileItems: [
-      "都内の会社で技術職の業務をしています。",
+      "都内の会社で品質関係の技術職の業務をしています。",
       "機器類操作60％、PC作業40％程度です。",
-      "大学は工学部電気工学科を専攻しました。",
+      "大学は工学部を専攻しました。",
     ],
   },
   {
     title: "資格",
     profileItems: [
+      "AWS Certified Cloud Practitioner ( 2024年 )",
       "基本情報技術者試験 ( 2021年 )",
       "TOEIC 865 ( 2019年 )",
       "日商簿記検定3級 ( 2016年 )",
