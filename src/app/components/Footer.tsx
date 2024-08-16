@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div className="py-2 text-center text-sm text-gray-400">
-          © 2023 - Present mari2t All rights reserved.
+          © 2024 - Present mari2t All rights reserved.
         </div>
       </footer>
     </div>

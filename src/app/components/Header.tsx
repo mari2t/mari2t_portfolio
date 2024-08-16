@@ -12,7 +12,7 @@ const Header: FunctionComponent = () => {
       </div>
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
         <Link href="/" className="text-cyan-100 font-bold text-xl">
-          Portfolios
+          Works
         </Link>
         <Link href="/skills" className="text-cyan-100 font-bold text-xl">
           Skills

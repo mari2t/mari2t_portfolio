@@ -17,7 +17,7 @@ const Collections = () => {
   const products = [
     {
       title: "ruby-kids-todo",
-      overview: "🧒 子供用TODOアプリ",
+      overview: "子供用TODOアプリ",
       useTech: "RubyOnRails",
       creationday: "2024/1/27",
       imgUrl: "/img/imgRuby-kids-todo.png",
@@ -25,7 +25,7 @@ const Collections = () => {
     },
     {
       title: "subscription-management",
-      overview: "💰 サブスクリプション管理アプリ",
+      overview: "サブスクリプション管理アプリ",
       useTech: "Typescript,Next,Tailwind CSS",
       creationday: "2023/12/28",
       imgUrl: "/img/imgSubscription-management.png",
@@ -33,7 +33,7 @@ const Collections = () => {
     },
     {
       title: "action-impact-comparison",
-      overview: "🚶 行動比較アプリ",
+      overview: "行動比較アプリ",
       useTech: "Svelte,Tailwind CSS",
       creationday: "2023/11/11",
       imgUrl: "/img/imgActionImpactComparison.png",
@@ -41,7 +41,7 @@ const Collections = () => {
     },
     {
       title: "mari2t_portfolio",
-      overview: "📖 ポートフォリオサイト",
+      overview: "ポートフォリオサイト",
       useTech: "Typescript,Next,Tailwind CSS",
       creationday: "2023/8/14",
       imgUrl: "/img/imgportfoliosite.png",
@@ -49,7 +49,7 @@ const Collections = () => {
     },
     {
       title: "TODO everywhere",
-      overview: "	✔️TODO アプリ",
+      overview: "TODO アプリ",
       useTech: "Typescript,Next,Tailwind CSS,API",
       creationday: "2023/7/9",
       imgUrl: "/img/imgtodoeverywehere.png",
@@ -57,7 +57,7 @@ const Collections = () => {
     },
     {
       title: "YouWearItWell",
-      overview: "🌞 お天気アプリ",
+      overview: "お天気アプリ",
       useTech: "Next,API",
       creationday: "2023/5/31",
       imgUrl: "/img/imgyouwear.png",
@@ -65,7 +65,7 @@ const Collections = () => {
     },
     {
       title: "TheRestOfYourLife",
-      overview: "🧓 人生の残り時間計算アプリ",
+      overview: "人生の残り時間計算アプリ",
       useTech: "Vue",
       creationday: "2023/5/4",
       imgUrl: "/img/imgtherest.png",
@@ -73,7 +73,7 @@ const Collections = () => {
     },
     {
       title: "Cover-non-DXenvironment-Girl",
-      overview: "🗣️ 打ち合わせ記録アプリ",
+      overview: "打ち合わせ記録アプリ",
       useTech: "JavaScript",
       creationday: "2023/3/11",
       imgUrl: "/img/imgcover.png",
@@ -81,7 +81,7 @@ const Collections = () => {
     },
     {
       title: "MySchedule",
-      overview: "📅 スケジューリングアプリ",
+      overview: "スケジューリングアプリ",
       useTech: "React,Tailwind CSS",
       creationday: "2023/1/29",
       imgUrl: "/img/imgmyschedule.png",
@@ -89,7 +89,7 @@ const Collections = () => {
     },
     {
       title: "MydidReact_fourSeasons",
-      overview: "✅ やったこと記録アプリ",
+      overview: "やったこと記録アプリ",
       useTech: "React",
       creationday: "2023/1/3",
       imgUrl: "/img/imgmydid.png",
@@ -103,7 +103,7 @@ const Collections = () => {
         <Introduce />
         <div className="mb-2 mt-4 flex items-end justify-between md:mb-4">
           <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
-            📖Portfolios
+            Works
           </h2>
         </div>
         <div className="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
