@@ -16,6 +16,14 @@ const Collections = () => {
   // 各レポジトリの情報
   const products = [
     {
+      title: "alcohol_calculator_next",
+      overview: "アルコール計算機",
+      useTech: "Typescript,Next,Tailwind CSS",
+      creationday: "2024/8/18",
+      imgUrl: "/img/imgAlcoholCalculatorNext.png",
+      githubUrl: "https://github.com/mari2t/alcohol_calculator_next",
+    },
+    {
       title: "ruby-kids-todo",
       overview: "子供用TODOアプリ",
       useTech: "RubyOnRails",
