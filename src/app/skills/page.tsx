@@ -7,6 +7,7 @@ import {
   SiJavascript,
   SiNextdotjs,
   SiExpress,
+  SiDjango,
   SiMysql,
   SiPostgresql,
   SiAmazonec2,
@@ -17,6 +18,10 @@ import {
   SiGooglecloud,
   SiRubyonrails,
   SiRuby,
+  SiMicrosoftword,
+  SiMicrosoftexcel,
+  SiMicrosoftpowerpoint,
+  SiPowerautomate,
 } from "react-icons/si";
 
 const skills = [
@@ -37,6 +42,7 @@ const skills = [
       { name: "Express", icon: <SiExpress /> },
       { name: "Next.js", icon: <SiNextdotjs /> },
       { name: "RubyOnRails", icon: <SiRubyonrails /> },
+      { name: "Django", icon: <SiDjango /> },
     ],
   },
   {
@@ -65,6 +71,15 @@ const skills = [
     skills: [
       { name: "Firestore", icon: <SiGooglecloud /> },
       { name: "Authentication", icon: <SiGooglecloud /> },
+    ],
+  },
+  {
+    title: "Microsoft Office",
+    skills: [
+      { name: "Word", icon: <SiMicrosoftword /> },
+      { name: "Excel", icon: <SiMicrosoftexcel /> },
+      { name: "Powerpoint", icon: <SiMicrosoftpowerpoint /> },
+      { name: "PowerAutomate", icon: <SiPowerautomate /> },
     ],
   },
 ];
