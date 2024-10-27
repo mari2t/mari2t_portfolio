@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2024/10/27
+
+1.Introduceを現状に合わせて修正。
+
 ## 2024/10/20
 
 1. readme、skill、about、を現状に合わせて修正。

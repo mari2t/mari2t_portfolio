@@ -12,7 +12,7 @@ const Introduce = () => {
         <div className="w-4/5 items-end mb-4 lg:w-2/5 bg-gray-200 rounded-lg p-4">
           <div className="text-sm lg:text-base">
             web関係、ローコード、資格の勉強をしています。 <br />
-            最近はAI関連、office関連、ローコード関連が気になります。
+            2025年6月に情報処理安全確保支援士を受験予定です。
           </div>
         </div>
       </div>
