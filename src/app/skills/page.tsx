@@ -1,6 +1,5 @@
 "use client";
 import { FunctionComponent } from "react";
-import { IconContext } from "react-icons";
 import { FaPython, FaReact, FaVuejs, FaGitAlt, FaAws } from "react-icons/fa";
 import {
   SiTypescript,
@@ -14,7 +13,6 @@ import {
   SiAwslambda,
   SiAmazons3,
   SiAmazonrds,
-  SiAmazonaws,
   SiGooglecloud,
   SiRubyonrails,
   SiRuby,
@@ -26,7 +24,7 @@ import {
 
 const skills = [
   {
-    title: "Development Languages",
+    title: "言語",
     skills: [
       { name: "JavaScript", icon: <SiJavascript /> },
       { name: "TypeScript", icon: <SiTypescript /> },
@@ -35,7 +33,7 @@ const skills = [
     ],
   },
   {
-    title: "Libraries / Frameworks",
+    title: "ライブラリ/フレームワーク",
     skills: [
       { name: "React", icon: <FaReact /> },
       { name: "Vue.js", icon: <FaVuejs /> },
@@ -46,14 +44,14 @@ const skills = [
     ],
   },
   {
-    title: "Database",
+    title: "データベース",
     skills: [
       { name: "MySQL", icon: <SiMysql /> },
       { name: "PostgreSQL", icon: <SiPostgresql /> },
     ],
   },
   {
-    title: "Version Control Tools",
+    title: "バージョンコントロールツール",
     skills: [{ name: "Git", icon: <FaGitAlt /> }],
   },
   {
@@ -63,7 +61,7 @@ const skills = [
       { name: "Lambda", icon: <SiAwslambda /> },
       { name: "S3", icon: <SiAmazons3 /> },
       { name: "RDS", icon: <SiAmazonrds /> },
-      { name: "App Runner", icon: <SiAmazonaws /> },
+      { name: "App Runner", icon: <FaAws /> },
     ],
   },
   {

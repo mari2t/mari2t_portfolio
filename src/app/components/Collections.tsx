@@ -10,11 +10,19 @@ import {
   BiLogoJavascript,
 } from "react-icons/bi";
 import { TbBrandNextjs, TbApi, TbBrandSvelte } from "react-icons/tb";
-import { SiRubyonrails } from "react-icons/si";
+import { SiRubyonrails, SiShadcnui } from "react-icons/si";
 
 const Collections = () => {
   // 各レポジトリの情報
   const products = [
+    {
+      title: "analog_timer",
+      overview: "アナログタイマー",
+      useTech: "Typescript,Next,Tailwind CSS,Shadcn",
+      creationday: "2024/11/19",
+      imgUrl: "/img/imgAnalogTimer.png",
+      githubUrl: "https://github.com/mari2t/rainbow_analog_timer",
+    },
     {
       title: "alcohol_calculator_next",
       overview: "アルコール計算機",
@@ -146,7 +154,6 @@ type TechIconProps = {
 };
 
 const Product = ({
-  title,
   overview,
   useTech,
   creationday,
@@ -201,6 +208,7 @@ const TechIcon = ({ techName }: TechIconProps) => {
         {techName === "JavaScript" && <BiLogoJavascript />}
         {techName === "Svelte" && <TbBrandSvelte />}
         {techName === "RubyOnRails" && <SiRubyonrails />}
+        {techName === "Shadcn" && <SiShadcnui />}
       </IconContext.Provider>
     </div>
   );
