@@ -16,6 +16,14 @@ const Collections = () => {
   // 各レポジトリの情報
   const products = [
     {
+      title: "alcohol_ratio_calculator",
+      overview: "割った後のアルコール度数計算機",
+      useTech: "Typescript,Next,Tailwind CSS,Shadcn",
+      creationday: "2024/12/31",
+      imgUrl: "/img/imgAlcoholRatioCalculator.png",
+      githubUrl: "https://github.com/mari2t/alcohol_ratio_calculator",
+    },
+    {
       title: "analog_timer",
       overview: "アナログタイマー",
       useTech: "Typescript,Next,Tailwind CSS,Shadcn",
@@ -118,9 +126,7 @@ const Collections = () => {
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <Introduce />
         <div className="mb-2 mt-4 flex items-end justify-between md:mb-4">
-          <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
-            Works
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">Apps</h2>
         </div>
         <div className="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
           {products.map((product) => (

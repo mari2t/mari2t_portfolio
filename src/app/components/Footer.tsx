@@ -8,7 +8,7 @@ const Footer = () => {
           <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
             <div className="flex space-x-4">
               <Link href="/" className="text-stone-600 font-bold text-xl">
-                Portfolios
+                Apps
               </Link>
               <Link href="/skills" className="text-stone-600 font-bold text-xl">
                 Skills
